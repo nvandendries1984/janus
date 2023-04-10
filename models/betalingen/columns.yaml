@@ -1,16 +1,34 @@
 columns:
-    created_at:
-        label: 'Gemaakt op'
-        type: datetime
+    leverancier:
+        label: Leverancier
+        type: text
+        searchable: true
+        sortable: true
+        select: naam
+        relation: leverancier
     factuurdatum:
         label: factuurdatum
         type: text
+        sortable: true
     bedrag:
         label: bedrag
         type: text
+        sortable: true
     status:
         label: status
         type: text
+        searchable: true
+        sortable: true
     factuurnummer:
         label: factuurnummer
         type: text
+        sortable: true
+    btw_tarief:
+        label: 'BTW Tarief (%)'
+        type: number
+        sortable: true
+    created_at:
+        label: 'Gemaakt op'
+        type: datetime
+        sortable: true
+

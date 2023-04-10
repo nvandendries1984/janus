@@ -2,7 +2,7 @@ fields:
     factuurnummer:
         label: Factuurnummer
         span: auto
-        required: 1
+        required: 0
         type: text
     factuurdatum:
         label: Factuurdatum
@@ -37,10 +37,19 @@ fields:
         type: relation
     factuur:
         label: 'factuur upload'
-        span: auto
         mode: file
         useCaption: true
         thumbOptions:
             mode: crop
             extension: auto
+        span: auto
         type: fileupload
+    btw_tarief:
+        label: 'BTW Tarief (%)'
+        options:
+            0: '0'
+            9: '9'
+            21: '21'
+        showSearch: true
+        span: left
+        type: dropdown
