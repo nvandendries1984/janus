@@ -20,4 +20,13 @@ class Betalingen extends Model
      */
     public $rules = [
     ];
+
+    public $hasOne = [
+        'categorie' => \NielsVanDenDries\Janus\Models\Categorien::class,
+        'leverancier' => \NielsVanDenDries\Janus\Models\Leveranciers::class
+    ];
+
+    public $attachMany = [
+        'factuur' => \System\Models\File::class
+    ];
 }

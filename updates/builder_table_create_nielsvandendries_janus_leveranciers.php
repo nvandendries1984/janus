@@ -15,6 +15,7 @@ class BuilderTableCreateNielsvandendriesJanusLeveranciers extends Migration
             $table->timestamp('updated_at')->nullable();
             $table->string('naam');
             $table->string('producten_id')->nullable();
+            $table->string('betalingen_id')->nullable();
             $table->string('adres');
             $table->string('postcode');
             $table->string('plaats');

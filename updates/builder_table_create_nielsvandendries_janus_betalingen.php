@@ -16,6 +16,7 @@ class BuilderTableCreateNielsvandendriesJanusBetalingen extends Migration
             $table->date('factuurdatum');
             $table->decimal('bedrag', 10, 2);
             $table->string('status');
+            $table->string('factuurnummer');
         });
     }
     
