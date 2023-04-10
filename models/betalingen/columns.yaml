@@ -11,9 +11,25 @@ columns:
         type: text
         sortable: true
     bedrag:
-        label: bedrag
-        type: text
+        label: Bedrag inc BTW
+        type: number
         sortable: true
+    bedrag_btw:
+        label: BTW bedrag
+        type: number
+        decimals: 2
+        sortable: true
+        search: false
+        select: CONCAT(FORMAT(bedrag - (bedrag / (1 + (btw_tarief / 100))), 2), ' (', btw_tarief, '% BTW)')
+        readOnly: true
+    bedrag_ex_btw:
+        label: Bedrag ex BTW
+        type: number
+        decimals: 2
+        sortable: true
+        search: false
+        select: CONCAT(FORMAT(bedrag / (1 + (btw_tarief / 100)), 2), ' (', btw_tarief, '% BTW)')
+        readOnly: true
     status:
         label: status
         type: text
