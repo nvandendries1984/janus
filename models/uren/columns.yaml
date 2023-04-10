@@ -24,4 +24,4 @@ columns:
     bereikte_tijd:
         label: Gewerkte tijd (Minuten)
         type: text
-        searchable: true        
+        searchable: true

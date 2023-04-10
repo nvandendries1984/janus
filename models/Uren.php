@@ -39,6 +39,6 @@ class Uren extends Model
             $this->attributes['bereikte_tijd'] = $verschilInMinuten;
         }
     }
-
+    
     // einde tijd berekenen
 }
