@@ -13,7 +13,7 @@ class BuilderTableCreateNielsvandendriesJanusOffertes extends Migration
             $table->increments('id')->unsigned();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
-            $table->string('offertenummer');
+            $table->string('offertenummer')->nullable();;
             $table->date('offertedatum');
             $table->date('vervaldatum');
             $table->string('status');

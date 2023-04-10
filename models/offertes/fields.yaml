@@ -2,6 +2,7 @@ fields:
     offertenummer:
         label: Offertenummer
         span: auto
+        readOnly: 1
         type: text
     offertedatum:
         label: Offertedatum
@@ -15,8 +16,13 @@ fields:
         type: datepicker
     status:
         label: Status
+        options:
+            Open: Open
+            Gefactureerd: Gefactureerd
+            Afgewezen: Afgewezen
+        showSearch: true
         span: auto
-        type: text
+        type: dropdown
     klant:
         label: Klant
         nameFrom: klant
@@ -30,4 +36,11 @@ fields:
         descriptionFrom: description
         select: naam
         span: auto
+        type: relation
+    producten:
+        label: Producten
+        nameFrom: producten
+        descriptionFrom: producten
+        select: naam
+        span: full
         type: relation
