@@ -4,7 +4,6 @@ use Model;
 use Carbon;
 use Illuminate\Support\Facades\DB;
 
-
 /**
  * Model
  */
@@ -32,7 +31,7 @@ class Offertes extends Model
     public $hasMany = [
         'producten' => \NielsVanDenDries\Janus\Models\Producten::class
     ];
-
+    
     public static function boot()
     {
         parent::boot();
