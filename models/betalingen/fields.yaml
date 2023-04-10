@@ -1,0 +1,17 @@
+fields:
+    factuurdatum:
+        label: Factuurdatum
+        span: auto
+        type: datepicker
+    bedrag:
+        label: Bedrag
+        span: auto
+        type: number
+    status:
+        label: Status
+        span: auto
+        options:
+            open: open
+            voldaan: voldaan
+        showSearch: true
+        type: dropdown

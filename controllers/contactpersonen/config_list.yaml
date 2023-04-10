@@ -1,0 +1,12 @@
+list: $/nielsvandendries/janus/models/contactpersonen/columns.yaml
+modelClass: NielsVanDenDries\Janus\Models\Contactpersonen
+title: Contactpersonen
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'nielsvandendries/janus/contactpersonen/update/:id'

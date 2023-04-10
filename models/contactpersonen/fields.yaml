@@ -1,0 +1,20 @@
+fields:
+    naam:
+        label: Naam
+        span: auto
+        required: 1
+        type: text
+    functie:
+        label: Functie
+        span: auto
+        required: 1
+        type: text
+    emailadres:
+        label: Emailadres
+        span: auto
+        required: 1
+        type: text
+    telefoonnummer:
+        label: Telefoonnummer
+        span: auto
+        type: text

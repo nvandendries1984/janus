@@ -1,0 +1,36 @@
+fields:
+    naam:
+        label: Naam
+        span: auto
+        type: text
+    adres:
+        label: Adres
+        span: auto
+        type: text
+    postcode:
+        label: Postcode
+        span: auto
+        type: text
+    plaats:
+        label: Plaats
+        span: auto
+        type: text
+    land:
+        label: Land
+        span: auto
+        type: text
+    emailadres:
+        label: Emailadres
+        span: auto
+        type: text
+    telefoonnummer:
+        label: Telefoonnummer
+        span: auto
+        type: text
+    contactpersoon:
+        label: Contactpersoon
+        span: auto
+        nameFrom: contactpersoon
+        descriptionFrom: description
+        select: naam
+        type: relation

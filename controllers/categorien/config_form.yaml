@@ -1,0 +1,10 @@
+name: Categorien
+form: $/nielsvandendries/janus/models/categorien/fields.yaml
+modelClass: NielsVanDenDries\Janus\Models\Categorien
+defaultRedirect: nielsvandendries/janus/categorien
+create:
+    redirect: 'nielsvandendries/janus/categorien/update/:id'
+    redirectClose: nielsvandendries/janus/categorien
+update:
+    redirect: nielsvandendries/janus/categorien
+    redirectClose: nielsvandendries/janus/categorien

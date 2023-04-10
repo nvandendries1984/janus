@@ -1,0 +1,10 @@
+name: Uren
+form: $/nielsvandendries/janus/models/uren/fields.yaml
+modelClass: NielsVanDenDries\Janus\Models\Uren
+defaultRedirect: nielsvandendries/janus/uren
+create:
+    redirect: 'nielsvandendries/janus/uren/update/:id'
+    redirectClose: nielsvandendries/janus/uren
+update:
+    redirect: nielsvandendries/janus/uren
+    redirectClose: nielsvandendries/janus/uren

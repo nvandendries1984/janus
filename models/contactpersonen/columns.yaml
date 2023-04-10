@@ -1,0 +1,20 @@
+columns:
+    naam:
+        label: naam
+        type: text
+        searchable: true
+        sortable: true
+    functie:
+        label: functie
+        type: text
+        searchable: true
+        sortable: true
+    emailadres:
+        label: emailadres
+        type: text
+        searchable: true
+        sortable: true
+    telefoonnummer:
+        label: telefoonnummer
+        type: text
+        sortable: true

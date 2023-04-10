@@ -1,0 +1,10 @@
+name: Facturen
+form: $/nielsvandendries/janus/models/facturen/fields.yaml
+modelClass: NielsVanDenDries\Janus\Models\Facturen
+defaultRedirect: nielsvandendries/janus/facturen
+create:
+    redirect: 'nielsvandendries/janus/facturen/update/:id'
+    redirectClose: nielsvandendries/janus/facturen
+update:
+    redirect: nielsvandendries/janus/facturen
+    redirectClose: nielsvandendries/janus/facturen

@@ -1,0 +1,64 @@
+fields:
+    naam:
+        label: Naam
+        span: full
+        required: 1
+        type: text
+    adres:
+        label: Adres
+        span: auto
+        type: text
+    postcode:
+        label: Postcode
+        span: auto
+        type: text
+    plaats:
+        label: Plaats
+        span: auto
+        type: text
+    emailadres:
+        label: Emailadres
+        span: auto
+        type: text
+    telefoonnummer:
+        label: Telefoonnummer
+        span: auto
+        type: text
+    kvk_nummer:
+        label: 'Kvk nummer'
+        span: auto
+        type: text
+    btw_nummer:
+        label: 'Btw nummer'
+        span: auto
+        type: text
+    rekeningnummer:
+        label: Rekeningnummer
+        span: auto
+        type: text
+    btw_tarief:
+        label: 'BTW Tarief (%)'
+        options:
+            0: '0'
+            9: '9'
+            21: '21'
+        showSearch: true
+        span: auto
+        type: dropdown
+    rechtsvorm:
+        label: Rechtsvorm
+        span: auto
+        options:
+            Eenmanszaak: Eenmanszaak
+            'Vennootschap onder firma (vof)': 'Vennootschap onder firma (vof)'
+            'Commanditaire vennootschap (cv)': 'Commanditaire vennootschap (cv)'
+            Maatschap: Maatschap
+            Rederij: Rederij
+            'Besloten vennootschap (bv)': 'Besloten vennootschap (bv)'
+            'Naamloze vennootschap (nv)': 'Naamloze vennootschap (nv)'
+            Vereniging: Vereniging
+            'Coöperatie en onderlinge waarborgmaatschappij': 'Coöperatie en onderlinge waarborgmaatschappij'
+            Stichting: Stichting
+            Kerkgenootschap: Kerkgenootschap
+        showSearch: true
+        type: dropdown

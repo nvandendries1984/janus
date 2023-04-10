@@ -1,0 +1,31 @@
+fields:
+    van:
+        label: Van
+        mode: datetime
+        span: auto
+        required: 1
+        type: datepicker
+    tot:
+        label: Tot
+        mode: datetime
+        span: auto
+        required: 1
+        type: datepicker
+    pauze:
+        label: Number
+        span: auto
+        required: 1
+        type: number
+    omschrijving:
+        label: Omschrijving
+        span: auto
+        type: textarea
+    project:
+        label: Project
+        nameFrom: project
+        descriptionFrom: description
+        select: naam
+        span: auto
+        readOnly: 0
+        required: 1
+        type: relation

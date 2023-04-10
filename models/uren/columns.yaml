@@ -1,0 +1,23 @@
+columns:
+    van:
+        label: van
+        type: text
+    tot:
+        label: tot
+        type: text
+        sortable: true
+    pauze:
+        label: pauze
+        type: text
+        sortable: true
+    omschrijving:
+        label: omschrijving
+        type: text
+        sortable: true
+    project:
+        label: Project
+        type: text
+        searchable: true
+        sortable: true
+        select: naam
+        relation: project

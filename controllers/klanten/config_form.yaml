@@ -1,0 +1,10 @@
+name: Klanten
+form: $/nielsvandendries/janus/models/klanten/fields.yaml
+modelClass: NielsVanDenDries\Janus\Models\Klanten
+defaultRedirect: nielsvandendries/janus/klanten
+create:
+    redirect: 'nielsvandendries/janus/klanten/update/:id'
+    redirectClose: nielsvandendries/janus/klanten
+update:
+    redirect: nielsvandendries/janus/klanten
+    redirectClose: nielsvandendries/janus/klanten

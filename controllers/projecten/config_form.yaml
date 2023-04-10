@@ -1,0 +1,10 @@
+name: Projecten
+form: $/nielsvandendries/janus/models/projecten/fields.yaml
+modelClass: NielsVanDenDries\Janus\Models\Projecten
+defaultRedirect: nielsvandendries/janus/projecten
+create:
+    redirect: 'nielsvandendries/janus/projecten/update/:id'
+    redirectClose: nielsvandendries/janus/projecten
+update:
+    redirect: nielsvandendries/janus/projecten
+    redirectClose: nielsvandendries/janus/projecten

@@ -1,0 +1,21 @@
+fields:
+    naam:
+        label: Naam
+        span: left
+        required: 1
+        type: text
+    omschrijving:
+        label: Omschrijving
+        size: small
+        span: left
+        type: textarea
+tabs:
+    fields:
+        Producten:
+            label: Producten
+            nameFrom: Producten
+            descriptionFrom: Producten
+            select: naam
+            span: full
+            type: relation
+            tab: Producten

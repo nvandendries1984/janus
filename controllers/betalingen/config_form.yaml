@@ -1,0 +1,10 @@
+name: Betalingen
+form: $/nielsvandendries/janus/models/betalingen/fields.yaml
+modelClass: NielsVanDenDries\Janus\Models\Betalingen
+defaultRedirect: nielsvandendries/janus/betalingen
+create:
+    redirect: 'nielsvandendries/janus/betalingen/update/:id'
+    redirectClose: nielsvandendries/janus/betalingen
+update:
+    redirect: nielsvandendries/janus/betalingen
+    redirectClose: nielsvandendries/janus/betalingen

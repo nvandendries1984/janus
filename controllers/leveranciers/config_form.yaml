@@ -1,0 +1,10 @@
+name: Leveranciers
+form: $/nielsvandendries/janus/models/leveranciers/fields.yaml
+modelClass: NielsVanDenDries\Janus\Models\Leveranciers
+defaultRedirect: nielsvandendries/janus/leveranciers
+create:
+    redirect: 'nielsvandendries/janus/leveranciers/update/:id'
+    redirectClose: nielsvandendries/janus/leveranciers
+update:
+    redirect: nielsvandendries/janus/leveranciers
+    redirectClose: nielsvandendries/janus/leveranciers

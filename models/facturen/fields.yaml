@@ -1,0 +1,17 @@
+fields:
+    factuurnummer:
+        label: Factuurnummer
+        span: auto
+        type: text
+    factuurdatum:
+        label: Factuurdatum
+        span: auto
+        type: datepicker
+    vervaldatum:
+        label: Vervaldatum
+        span: auto
+        type: datepicker
+    status:
+        label: Status
+        span: auto
+        type: text

@@ -1,0 +1,33 @@
+columns:
+    naam:
+        label: naam
+        type: text
+        searchable: true
+        sortable: true
+    adres:
+        label: adres
+        type: text
+        searchable: true
+        sortable: true
+    postcode:
+        label: postcode
+        type: text
+        searchable: true
+        sortable: true
+    plaats:
+        label: plaats
+        type: text
+        searchable: true
+        sortable: true
+    land:
+        label: land
+        type: text
+        sortable: true
+    emailadres:
+        label: emailadres
+        type: text
+        sortable: true
+    telefoonnummer:
+        label: telefoonnummer
+        type: text
+        sortable: true

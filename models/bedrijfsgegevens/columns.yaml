@@ -1,0 +1,44 @@
+columns:
+    rechtsvorm:
+        label: rechtsvorm
+        type: text
+        sortable: true
+    naam:
+        label: naam
+        type: text
+        searchable: true
+        sortable: true
+    adres:
+        label: adres
+        type: text
+        sortable: true
+    postcode:
+        label: postcode
+        type: text
+        sortable: true
+    plaats:
+        label: plaats
+        type: text
+        sortable: true
+    emailadres:
+        label: emailadres
+        type: text
+        searchable: true
+        sortable: true
+    telefoonnummer:
+        label: telefoonnummer
+        type: text
+        searchable: true
+        sortable: true
+    kvk_nummer:
+        label: kvk_nummer
+        type: text
+        sortable: true
+    btw_nummer:
+        label: btw_nummer
+        type: text
+        sortable: true
+    rekeningnummer:
+        label: rekeningnummer
+        type: text
+        sortable: true

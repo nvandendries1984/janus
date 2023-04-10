@@ -1,0 +1,10 @@
+name: Contactpersonen
+form: $/nielsvandendries/janus/models/contactpersonen/fields.yaml
+modelClass: NielsVanDenDries\Janus\Models\Contactpersonen
+defaultRedirect: nielsvandendries/janus/contactpersonen
+create:
+    redirect: 'nielsvandendries/janus/contactpersonen/update/:id'
+    redirectClose: nielsvandendries/janus/contactpersonen
+update:
+    redirect: nielsvandendries/janus/contactpersonen
+    redirectClose: nielsvandendries/janus/contactpersonen

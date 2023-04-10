@@ -1,0 +1,35 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table nielsvandendries_janus_categorien'
+    - builder_table_create_nielsvandendries_janus_categorien.php
+1.0.3:
+    - 'Created table nielsvandendries_janus_producten'
+    - builder_table_create_nielsvandendries_janus_producten.php
+1.0.4:
+    - 'Created table nielsvandendries_janus_bedrijfsgegevens'
+    - builder_table_create_nielsvandendries_janus_bedrijfsgegevens.php
+1.0.5:
+    - 'Created table nielsvandendries_janus_klanten'
+    - builder_table_create_nielsvandendries_janus_klanten.php
+1.0.6:
+    - 'Created table nielsvandendries_janus_contactpersonen'
+    - builder_table_create_nielsvandendries_janus_contactpersonen.php
+1.0.7:
+    - 'Created table nielsvandendries_janus_projecten'
+    - builder_table_create_nielsvandendries_janus_projecten.php
+1.0.8:
+    - 'Created table nielsvandendries_janus_uren'
+    - builder_table_create_nielsvandendries_janus_uren.php
+1.0.9:
+    - 'Created table nielsvandendries_janus_leveranciers'
+    - builder_table_create_nielsvandendries_janus_leveranciers.php
+1.0.10:
+    - 'Created table nielsvandendries_janus_betalingen'
+    - builder_table_create_nielsvandendries_janus_betalingen.php
+1.0.11:
+    - 'Created table nielsvandendries_janus_facturen'
+    - builder_table_create_nielsvandendries_janus_facturen.php
+1.0.12:
+    - 'Created table nielsvandendries_janus_offertes'
+    - builder_table_create_nielsvandendries_janus_offertes.php

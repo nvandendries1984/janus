@@ -1,0 +1,19 @@
+columns:
+    offertenummer:
+        label: offertenummer
+        type: text
+        searchable: true
+        sortable: true
+    offertedatum:
+        label: offertedatum
+        type: text
+        sortable: true
+    vervaldatum:
+        label: vervaldatum
+        type: text
+        sortable: true
+    status:
+        label: status
+        type: text
+        searchable: false
+        sortable: true

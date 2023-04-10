@@ -1,0 +1,16 @@
+fields:
+    naam:
+        label: Naam
+        span: auto
+        type: text
+    omschrijving:
+        label: Omschrijving
+        span: auto
+        type: text
+    klant:
+        label: Klant
+        span: auto
+        nameFrom: klant
+        descriptionFrom: description
+        select: naam
+        type: relation

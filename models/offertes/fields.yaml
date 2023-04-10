@@ -1,0 +1,17 @@
+fields:
+    offertenummer:
+        label: Offertenummer
+        span: auto
+        type: text
+    offertedatum:
+        label: Offertedatum
+        span: auto
+        type: datepicker
+    vervaldatum:
+        label: Vervaldatum
+        span: auto
+        type: datepicker
+    status:
+        label: Status
+        span: auto
+        type: text

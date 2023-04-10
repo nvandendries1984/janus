@@ -1,0 +1,49 @@
+fields:
+    naam:
+        label: Naam
+        span: auto
+        type: text
+    omschrijving:
+        label: Omschrijving
+        size: giant
+        span: right
+        type: textarea
+    bedrag:
+        label: Bedrag
+        span: auto
+        type: number
+    frequentie:
+        label: Frequentie
+        span: left
+        type: text
+    producttype:
+        label: Producttype
+        options:
+            product: product
+            dienst: dienst
+            uren: uren
+        showSearch: true
+        span: left
+        type: dropdown
+    categorie:
+        label: Categorie
+        nameFrom: categorie
+        descriptionFrom: description
+        select: naam
+        span: left
+        type: relation
+    btw_tarief:
+        label: 'BTW Tarief (%)'
+        options:
+            0: '0'
+            9: '9'
+            21: '21'
+        showSearch: true
+        span: left
+        type: dropdown
+    leverancier:
+        label: Leverancier
+        nameFrom: leverancier
+        select: naam
+        span: auto
+        type: relation

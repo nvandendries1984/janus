@@ -1,0 +1,10 @@
+name: Producten
+form: $/nielsvandendries/janus/models/producten/fields.yaml
+modelClass: NielsVanDenDries\Janus\Models\Producten
+defaultRedirect: nielsvandendries/janus/producten
+create:
+    redirect: 'nielsvandendries/janus/producten/update/:id'
+    redirectClose: nielsvandendries/janus/producten
+update:
+    redirect: nielsvandendries/janus/producten
+    redirectClose: nielsvandendries/janus/producten

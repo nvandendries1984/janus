@@ -1,0 +1,14 @@
+columns:
+    factuurdatum:
+        label: factuurdatum
+        type: text
+        sortable: true
+    bedrag:
+        label: bedrag
+        type: number
+        sortable: true
+    status:
+        label: status
+        type: text
+        searchable: true
+        sortable: true

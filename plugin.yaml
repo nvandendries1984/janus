@@ -1,0 +1,84 @@
+plugin:
+    name: 'nielsvandendries.janus::lang.plugin.name'
+    description: 'nielsvandendries.janus::lang.plugin.description'
+    author: 'Niels van den Dries'
+    icon: oc-icon-euro
+    homepage: 'https://nvandendries.nl'
+permissions:
+    manager:
+        tab: 'nielsvandendries.janus::lang.plugin.name'
+        label: 'Janus Manager'
+navigation:
+    main-menu-item:
+        label: Janus
+        url: /
+        icon: icon-money
+        permissions:
+            - manager
+        sideMenu:
+            side-menu-item:
+                label: Facturen
+                url: nielsvandendries/janus/facturen
+                icon: icon-euro
+                permissions:
+                    - manager
+            side-menu-item2:
+                label: Offertes
+                url: nielsvandendries/janus/offertes
+                icon: icon-euro
+                permissions:
+                    - manager
+            side-menu-item3:
+                label: Betalingen
+                url: nielsvandendries/janus/betalingen
+                icon: icon-euro
+                permissions:
+                    - manager
+            side-menu-item4:
+                label: klanten
+                url: nielsvandendries/janus/klanten
+                icon: icon-users
+                permissions:
+                    - manager
+            side-menu-item5:
+                label: leveranciers
+                url: nielsvandendries/janus/leveranciers
+                icon: icon-truck
+                permissions:
+                    - manager
+            side-menu-item6:
+                label: 'Contact Personen'
+                url: nielsvandendries/janus/contactpersonen
+                icon: icon-user
+                permissions:
+                    - manager
+            side-menu-item7:
+                label: Projecten
+                url: nielsvandendries/janus/projecten
+                icon: icon-puzzle-piece
+                permissions:
+                    - manager
+            side-menu-item8:
+                label: Uren
+                url: nielsvandendries/janus/uren
+                icon: icon-clock-o
+                permissions:
+                    - manager
+            side-menu-item11:
+                label: Producten
+                url: nielsvandendries/janus/producten
+                icon: icon-dropbox
+                permissions:
+                    - manager
+            side-menu-item10:
+                label: Categorien
+                url: nielsvandendries/janus/categorien
+                icon: icon-folder
+                permissions:
+                    - manager
+            side-menu-item9:
+                label: Bedrijfsgegevens
+                url: nielsvandendries/janus/bedrijfsgegevens
+                icon: icon-gears
+                permissions:
+                    - manager

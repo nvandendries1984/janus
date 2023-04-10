@@ -1,0 +1,10 @@
+name: Bedrijfsgegevens
+form: $/nielsvandendries/janus/models/bedrijfsgegevens/fields.yaml
+modelClass: NielsVanDenDries\Janus\Models\Bedrijfsgegevens
+defaultRedirect: nielsvandendries/janus/bedrijfsgegevens
+create:
+    redirect: 'nielsvandendries/janus/bedrijfsgegevens/update/:id'
+    redirectClose: nielsvandendries/janus/bedrijfsgegevens
+update:
+    redirect: nielsvandendries/janus/bedrijfsgegevens
+    redirectClose: nielsvandendries/janus/bedrijfsgegevens
