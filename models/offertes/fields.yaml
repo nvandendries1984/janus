@@ -5,13 +5,29 @@ fields:
         type: text
     offertedatum:
         label: Offertedatum
+        mode: date
         span: auto
         type: datepicker
     vervaldatum:
         label: Vervaldatum
         span: auto
+        mode: date
         type: datepicker
     status:
         label: Status
         span: auto
         type: text
+    klant:
+        label: Klant
+        nameFrom: klant
+        descriptionFrom: description
+        select: naam
+        span: auto
+        type: relation
+    bedrijfsgegevens:
+        label: Bedrijfsgegevens
+        nameFrom: bedrijfsgegevens
+        descriptionFrom: description
+        select: naam
+        span: auto
+        type: relation

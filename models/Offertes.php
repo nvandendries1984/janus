@@ -20,4 +20,9 @@ class Offertes extends Model
      */
     public $rules = [
     ];
+
+    public $hasOne = [
+        'klant' => \NielsVanDenDries\Janus\Models\Klanten::class,
+        'bedrijfsgegevens' => \NielsVanDenDries\Janus\Models\Bedrijfsgegevens::class,
+    ];
 }

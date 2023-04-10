@@ -14,6 +14,7 @@ class BuilderTableCreateNielsvandendriesJanusBedrijfsgegevens extends Migration
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
             $table->string('producten_id')->nullable();
+            $table->string('offertes_id')->nullable();
             $table->string('naam');
             $table->string('rechtsvorm')->nullable();
             $table->string('adres');
