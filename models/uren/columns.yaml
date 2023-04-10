@@ -21,3 +21,7 @@ columns:
         sortable: true
         select: naam
         relation: project
+    bereikte_tijd:
+        label: Gewerkte tijd (Minuten)
+        type: text
+        searchable: true        
