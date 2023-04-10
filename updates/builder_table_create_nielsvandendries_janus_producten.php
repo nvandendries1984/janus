@@ -18,6 +18,7 @@ class BuilderTableCreateNielsvandendriesJanusProducten extends Migration
             $table->string('categorien_id')->nullable();
             $table->string('btw_tarief')->nullable();
             $table->string('offertes_id')->nullable();
+            $table->string('aantal')->nullable();
             $table->decimal('bedrag', 10, 2);
             $table->string('producttype');
             $table->string('frequentie');
