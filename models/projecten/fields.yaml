@@ -14,3 +14,14 @@ fields:
         descriptionFrom: description
         select: naam
         type: relation
+tabs:
+    fields:
+        uren:
+            label: Uren
+            nameFrom: uren
+            descriptionFrom: uren
+            select: bereikte_tijd
+            span: auto
+            readOnly: 1
+            type: relation
+            tab: Uren
