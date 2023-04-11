@@ -1,0 +1,8 @@
+{
+    "name": "nielsvandendries/janus-plugin",
+    "type": "october-plugin",
+    "description": "Dutch Accounting and financial aid",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
