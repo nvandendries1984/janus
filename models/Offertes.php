@@ -28,25 +28,26 @@ class Offertes extends Model
         'bedrijfsgegevens' => \NielsVanDenDries\Janus\Models\Bedrijfsgegevens::class,
     ];
 
-    public $hasMany = [
-        'producten' => \NielsVanDenDries\Janus\Models\Producten::class
+    public $belongsToMany = [
+        'producten' => [\NielsVanDenDries\Janus\Models\Producten::class, 'table' => 'nielsvandendries_janus_offertes_producten']
     ];
+
+    public function getProductsOptions()
+    {
+        return \NielsVanDenDries\Janus\Models\Producten::all()->lists('naam', 'id');
+    }
     
     public static function boot()
     {
         parent::boot();
-
         // Event listener om het offertenummer te genereren en op te slaan
         static::creating(function ($offerte) {
             // Genereer de datum in het formaat Ymd
             $datum = date('Ymd');
-
             // Bepaal het volgnummer
             $volgnummer = DB::table('nielsvandendries_janus_offertes')->max('id') + 1;
-
             // Maak het offertenummer aan in het formaat OFF-DATUM-VOLGNUMMER
             $offertenummer = 'OFF' . $datum . $volgnummer;
-
             // Sla het offertenummer op in de database
             $offerte->offertenummer = $offertenummer;
         });
