@@ -28,8 +28,5 @@
     - 'Created table nielsvandendries_janus_betalingen'
     - builder_table_create_nielsvandendries_janus_betalingen.php
 1.0.11:
-    - 'Created table nielsvandendries_janus_facturen'
-    - builder_table_create_nielsvandendries_janus_facturen.php
-1.0.12:
-    - 'Created table nielsvandendries_janus_offertes'
-    - builder_table_create_nielsvandendries_janus_offertes.php
+    - 'Created table nielsvandendries_janus_inkomsten'
+    - builder_table_create_nielsvandendries_janus_inkomsten.php

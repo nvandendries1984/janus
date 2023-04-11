@@ -1,0 +1,21 @@
+fields:
+    naam:
+        label: Naam
+        span: auto
+        type: text
+    bedrag:
+        label: Bedrag
+        span: auto
+        type: number
+    factuurnummer:
+        label: Factuurnummer
+        span: auto
+        type: text
+    omschrijving:
+        label: Omschrijving
+        span: auto
+        type: textarea
+    status:
+        label: Status
+        span: auto
+        type: text

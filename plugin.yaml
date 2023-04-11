@@ -17,7 +17,7 @@ navigation:
             - manager
         sideMenu:
             side-menu-item3:
-                label: Betalingen
+                label: Uitgaven
                 url: nielsvandendries/janus/betalingen
                 icon: icon-euro
                 permissions:

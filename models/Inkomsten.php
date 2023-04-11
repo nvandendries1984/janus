@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class Facturen extends Model
+class Inkomsten extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     
@@ -13,7 +13,7 @@ class Facturen extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'nielsvandendries_janus_facturen';
+    public $table = 'nielsvandendries_janus_inkomsten';
 
     /**
      * @var array Validation rules
