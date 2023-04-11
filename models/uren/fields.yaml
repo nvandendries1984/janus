@@ -1,4 +1,10 @@
 fields:
+    omschrijving:
+        label: Omschrijving
+        size: giant
+        span: right
+        required: 1
+        type: textarea
     van:
         label: Van
         mode: datetime
@@ -8,24 +14,19 @@ fields:
     tot:
         label: Tot
         mode: datetime
-        span: auto
+        span: left
         required: 1
         type: datepicker
     pauze:
-        label: Number
-        span: auto
-        required: 1
+        label: 'Pauze (Minuten)'
+        span: left
         type: number
-    omschrijving:
-        label: Omschrijving
-        span: auto
-        type: textarea
     project:
         label: Project
         nameFrom: project
         descriptionFrom: description
         select: naam
-        span: auto
+        span: left
         readOnly: 0
         required: 1
         type: relation

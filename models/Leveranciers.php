@@ -24,4 +24,8 @@ class Leveranciers extends Model
     public $hasOne = [
         'contactpersoon' => \NielsVanDenDries\Janus\Models\Contactpersonen::class,
     ];
+    
+    public $hasMany = [
+        'producten' => \NielsVanDenDries\Janus\Models\Producten::class,
+    ];
 }

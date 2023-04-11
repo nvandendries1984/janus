@@ -49,3 +49,12 @@ fields:
             Open: Open
             'Te laat': 'Te laat'
         type: balloon-selector
+    btw_tarief:
+        label: 'BTW Tarief (%)'
+        options:
+            0: '0'
+            9: '9'
+            21: '21'
+        showSearch: true
+        span: left
+        type: dropdown

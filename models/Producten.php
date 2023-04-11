@@ -11,9 +11,8 @@ class Producten extends Model
     public $rules = [
     ];
 
-    public $hasOne = [
+    public $belongsTo = [
         'categorie' => \NielsVanDenDries\Janus\Models\Categorien::class,
-        'btw' => \NielsVanDenDries\Janus\Models\Bedrijfsgegevens::class,
         'leverancier' => \NielsVanDenDries\Janus\Models\Leveranciers::class
     ];
 }

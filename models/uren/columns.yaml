@@ -1,17 +1,17 @@
 columns:
     van:
-        label: van
+        label: Van
         type: text
     tot:
-        label: tot
+        label: Tot
         type: text
         sortable: true
     pauze:
-        label: pauze
+        label: Pauze
         type: text
         sortable: true
     omschrijving:
-        label: omschrijving
+        label: Omschrijving
         type: text
         sortable: true
     project:

@@ -13,6 +13,7 @@ class BuilderTableCreateNielsvandendriesJanusInkomsten extends Migration
             $table->increments('id')->unsigned();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
+            $table->decimal('btw_tarief', 10, 0)->nullable();
             $table->string('naam');
             $table->decimal('bedrag', 10, 2);
             $table->string('factuurnummer');

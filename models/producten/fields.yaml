@@ -12,10 +12,6 @@ fields:
         label: Bedrag
         span: auto
         type: number
-    frequentie:
-        label: Frequentie
-        span: left
-        type: text
     producttype:
         label: Producttype
         options:
@@ -24,6 +20,17 @@ fields:
             uren: uren
         showSearch: true
         span: left
+        type: dropdown
+    frequentie:
+        label: Frequentie
+        span: left
+        showSearch: true
+        options:
+            Eenmalig: Eenmalig
+            Dagelijks: Dagelijks
+            'Per uur': 'Per uur'
+            'Per maand': 'Per maand'
+            'Per jaar': 'Per jaar'
         type: dropdown
     categorie:
         label: Categorie

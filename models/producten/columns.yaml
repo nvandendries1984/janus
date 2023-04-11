@@ -25,3 +25,15 @@ columns:
         label: 'BTW Tarief (%)'
         type: number
         sortable: true
+    leverancier:
+        label: Leverancier
+        type: text
+        sortable: true
+        select: naam
+        relation: leverancier
+    categorie:
+        label: Categorie
+        type: text
+        sortable: true
+        select: naam
+        relation: categorie
