@@ -4,6 +4,7 @@ use Model;
 use Carbon;
 use Illuminate\Support\Facades\DB;
 
+
 /**
  * Model
  */
@@ -28,14 +29,9 @@ class Offertes extends Model
         'bedrijfsgegevens' => \NielsVanDenDries\Janus\Models\Bedrijfsgegevens::class,
     ];
 
-    public $belongsToMany = [
-        'producten' => [\NielsVanDenDries\Janus\Models\Producten::class, 'table' => 'nielsvandendries_janus_offertes_producten']
+    public $hasMany = [
+        'producten' => \NielsVanDenDries\Janus\Models\Producten::class,
     ];
-
-    public function getProductsOptions()
-    {
-        return \NielsVanDenDries\Janus\Models\Producten::all()->lists('naam', 'id');
-    }
     
     public static function boot()
     {

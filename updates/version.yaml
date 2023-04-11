@@ -33,6 +33,3 @@
 1.0.12:
     - 'Created table nielsvandendries_janus_offertes'
     - builder_table_create_nielsvandendries_janus_offertes.php
-1.0.13:
-    - 'Created table nielsvandendries_janus_offertes_producten'
-    - builder_table_create_nielsvandendries_janus_offertes_producten.php
