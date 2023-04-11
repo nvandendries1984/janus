@@ -16,18 +16,6 @@ navigation:
         permissions:
             - manager
         sideMenu:
-            side-menu-item:
-                label: Facturen
-                url: nielsvandendries/janus/facturen
-                icon: icon-euro
-                permissions:
-                    - manager
-            side-menu-item2:
-                label: Offertes
-                url: nielsvandendries/janus/offertes
-                icon: icon-euro
-                permissions:
-                    - manager
             side-menu-item3:
                 label: Betalingen
                 url: nielsvandendries/janus/betalingen
