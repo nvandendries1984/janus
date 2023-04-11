@@ -1,21 +1,51 @@
 fields:
+    klant:
+        label: Klant
+        nameFrom: klant
+        descriptionFrom: klant
+        select: naam
+        span: left
+        required: 1
+        type: relation
+    omschrijving:
+        label: Omschrijving
+        size: giant
+        span: auto
+        type: textarea
     naam:
         label: Naam
         span: auto
         type: text
     bedrag:
         label: Bedrag
-        span: auto
+        span: left
         type: number
     factuurnummer:
         label: Factuurnummer
-        span: auto
+        span: left
         type: text
-    omschrijving:
-        label: Omschrijving
+    categorie:
+        label: Categorie
+        nameFrom: categorie
+        descriptionFrom: categorie
+        select: naam
+        span: left
+        required: 1
+        type: relation
+    factuur:
+        label: 'Factuur upload'
         span: auto
-        type: textarea
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload
     status:
         label: Status
         span: auto
-        type: text
+        options:
+            Voldaan: Voldaan
+            Open: Open
+            'Te laat': 'Te laat'
+        type: balloon-selector

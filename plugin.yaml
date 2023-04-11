@@ -16,6 +16,12 @@ navigation:
         permissions:
             - manager
         sideMenu:
+            side-menu-item:
+                label: Inkomsten
+                url: nielsvandendries/janus/inkomsten
+                icon: icon-euro
+                permissions:
+                    - manager
             side-menu-item3:
                 label: Uitgaven
                 url: nielsvandendries/janus/betalingen

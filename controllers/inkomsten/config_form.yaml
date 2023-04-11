@@ -1,0 +1,11 @@
+name: Inkomsten
+modelClass: NielsVanDenDries\Janus\Models\Inkomsten
+form: $/nielsvandendries/janus/models/inkomsten/fields.yaml
+defaultRedirect: nielsvandendries/janus/inkomsten
+create:
+    redirect: 'nielsvandendries/janus/inkomsten/update/:id'
+    redirectClose: nielsvandendries/janus/inkomsten
+update:
+    redirect: nielsvandendries/janus/inkomsten
+    redirectClose: nielsvandendries/janus/inkomsten
+preview: {  }

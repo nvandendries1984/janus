@@ -1,31 +1,45 @@
 columns:
-    created_at:
-        label: created_at
-        type: datetime
-        sortable: true
-    updated_at:
-        label: updated_at
-        type: datetime
-        sortable: true
     naam:
-        label: naam
+        label: Naam
         type: text
         searchable: true
         sortable: true
     bedrag:
-        label: bedrag
+        label: Bedrag
         type: text
         sortable: true
     factuurnummer:
-        label: factuurnummer
+        label: Factuurnummer
         type: text
         sortable: true
     omschrijving:
-        label: omschrijving
-        type: text
+        label: Omschrijving
+        type: summary
         sortable: true
     status:
-        label: status
+        label: Status
         type: text
         searchable: true
+        sortable: true
+    categorie:
+        label: Categorie
+        type: text
+        searchable: true
+        sortable: true
+        select: naam
+        relation: categorie
+    klant:
+        label: Klant
+        type: text
+        searchable: true
+        sortable: true
+        select: naam
+        relation: klant
+    created_at:
+        label: Gemaakt op
+        type: datetime
+        sortable: true
+    updated_at:
+        label: Update op
+        type: datetime
         sortable: true

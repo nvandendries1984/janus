@@ -20,4 +20,13 @@ class Inkomsten extends Model
      */
     public $rules = [
     ];
+
+    public $hasOne = [
+        'categorie' => \NielsVanDenDries\Janus\Models\Categorien::class,
+        'klant' => \NielsVanDenDries\Janus\Models\Klanten::class
+    ];
+
+    public $attachMany = [
+        'factuur' => \System\Models\File::class
+    ];
 }

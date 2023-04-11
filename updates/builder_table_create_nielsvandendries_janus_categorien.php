@@ -15,6 +15,7 @@ class BuilderTableCreateNielsvandendriesJanusCategorien extends Migration
             $table->text('omschrijving')->nullable();
             $table->string('producten_id')->nullable();
             $table->string('betalingen_id')->nullable();
+            $table->string('inkomsten_id')->nullable();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });
