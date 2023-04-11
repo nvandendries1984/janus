@@ -3,10 +3,13 @@ fields:
         label: Naam
         span: auto
         type: text
+        required: 1
     adres:
         label: Adres
         span: auto
+        required: 1
         type: text
+        comment: 'Kan ook een webadres zijn'
     postcode:
         label: Postcode
         span: auto
@@ -23,6 +26,7 @@ fields:
         label: Emailadres
         span: auto
         type: text
+        required: 1
     telefoonnummer:
         label: Telefoonnummer
         span: auto

@@ -3,18 +3,22 @@ fields:
         label: Naam
         span: auto
         type: text
+        required: 1
     adres:
         label: Adres
         span: auto
         type: text
+        required: 1
     postcode:
         label: Postcode
         span: auto
         type: text
+        required: 1
     plaats:
         label: Plaats
         span: auto
         type: text
+        required: 1
     emailadres:
         label: Emailadres
         span: auto
@@ -27,14 +31,17 @@ fields:
         label: 'Kvk nummer'
         span: auto
         type: text
+        required: 0
     btw_nummer:
         label: 'Btw nummer'
         span: auto
         type: text
+        required: 0
     rekeningnummer:
         label: Rekeningnummer
         span: auto
         type: text
+        required: 0
     contactpersoon:
         label: Contactpersoon
         nameFrom: contactpersoon
@@ -47,6 +54,7 @@ fields:
         span: auto
         options:
             Eenmanszaak: Eenmanszaak
+            'Natuurlijk Persoon': 'Natuurlijk Persoon'
             'Vennootschap onder firma (vof)': 'Vennootschap onder firma (vof)'
             'Commanditaire vennootschap (cv)': 'Commanditaire vennootschap (cv)'
             Maatschap: Maatschap
@@ -59,3 +67,4 @@ fields:
             Kerkgenootschap: Kerkgenootschap
         showSearch: true
         type: dropdown
+        required: 1

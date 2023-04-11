@@ -2,13 +2,14 @@ fields:
     factuurnummer:
         label: Factuurnummer
         span: auto
-        required: 0
         type: text
+        required: 1
     factuurdatum:
         label: Factuurdatum
         mode: date
         span: auto
         type: datepicker
+        required: 1
     leverancier:
         label: Leverancier
         nameFrom: leverancier
@@ -16,10 +17,12 @@ fields:
         select: naam
         span: auto
         type: relation
+        required: 1
     bedrag:
         label: 'Bedrag (inc. BTW)'
         span: auto
         type: number
+        required: 1
     status:
         label: Status
         span: auto
@@ -28,6 +31,7 @@ fields:
             voldaan: voldaan
         showSearch: true
         type: dropdown
+        required: 1
     categorie:
         label: Categorie
         nameFrom: categorie
@@ -35,6 +39,13 @@ fields:
         select: naam
         span: auto
         type: relation
+        required: 1
+    omschrijving:
+        label: Omschrijving
+        size: large
+        span: right
+        required: 1
+        type: textarea
     factuur:
         label: 'factuur upload'
         mode: file
@@ -53,3 +64,12 @@ fields:
         showSearch: true
         span: left
         type: dropdown
+        required: 1
+    project:
+        label: Project
+        span: auto
+        nameFrom: project
+        descriptionFrom: project
+        select: naam
+        required: 1
+        type: relation

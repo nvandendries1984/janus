@@ -12,18 +12,22 @@ fields:
         size: giant
         span: auto
         type: textarea
+        required: 1
     naam:
         label: Naam
         span: auto
         type: text
+        required: 1
     bedrag:
         label: Bedrag
         span: left
         type: number
+        required: 1
     factuurnummer:
         label: Factuurnummer
         span: left
         type: text
+        required: 1
     categorie:
         label: Categorie
         nameFrom: categorie
@@ -49,6 +53,7 @@ fields:
             Open: Open
             'Te laat': 'Te laat'
         type: balloon-selector
+        required: 1
     btw_tarief:
         label: 'BTW Tarief (%)'
         options:
@@ -58,3 +63,4 @@ fields:
         showSearch: true
         span: left
         type: dropdown
+        required: 1

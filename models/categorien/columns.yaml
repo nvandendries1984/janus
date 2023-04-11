@@ -6,6 +6,12 @@ columns:
         sortable: true
     omschrijving:
         label: omschrijving
-        type: text
+        type: summary
         searchable: false
         sortable: true
+    Producten:
+        label: Producten
+        type: text
+        sortable: true
+        select: naam
+        relation: Producten

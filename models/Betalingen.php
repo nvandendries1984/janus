@@ -23,7 +23,8 @@ class Betalingen extends Model
 
     public $hasOne = [
         'categorie' => \NielsVanDenDries\Janus\Models\Categorien::class,
-        'leverancier' => \NielsVanDenDries\Janus\Models\Leveranciers::class
+        'leverancier' => \NielsVanDenDries\Janus\Models\Leveranciers::class,
+        'project' => \NielsVanDenDries\Janus\Models\Projecten::class
     ];
 
     public $attachMany = [

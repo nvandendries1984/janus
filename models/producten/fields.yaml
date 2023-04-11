@@ -3,15 +3,18 @@ fields:
         label: Naam
         span: auto
         type: text
+        required: 1
     omschrijving:
         label: Omschrijving
         size: giant
         span: right
         type: textarea
+        required: 1
     bedrag:
-        label: Bedrag
+        label: Bedrag (inc BTW)
         span: auto
         type: number
+        required: 1
     producttype:
         label: Producttype
         options:
@@ -21,6 +24,7 @@ fields:
         showSearch: true
         span: left
         type: dropdown
+        required: 1
     frequentie:
         label: Frequentie
         span: left
@@ -32,6 +36,7 @@ fields:
             'Per maand': 'Per maand'
             'Per jaar': 'Per jaar'
         type: dropdown
+        required: 1
     categorie:
         label: Categorie
         nameFrom: categorie
@@ -39,6 +44,7 @@ fields:
         select: naam
         span: left
         type: relation
+        required: 1
     btw_tarief:
         label: 'BTW Tarief (%)'
         options:
@@ -48,9 +54,11 @@ fields:
         showSearch: true
         span: left
         type: dropdown
+        required: 1
     leverancier:
         label: Leverancier
         nameFrom: leverancier
         select: naam
         span: auto
         type: relation
+        required: 1

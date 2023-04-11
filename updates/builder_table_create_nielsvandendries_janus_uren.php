@@ -14,6 +14,7 @@ class BuilderTableCreateNielsvandendriesJanusUren extends Migration
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
             $table->string('projecten_id')->nullable();
+            $table->string('project_id')->nullable();
             $table->time('van');
             $table->time('tot');
             $table->decimal('pauze', 10, 0);

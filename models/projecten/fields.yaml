@@ -1,18 +1,21 @@
 fields:
     naam:
         label: Naam
-        span: auto
+        span: left
+        required: 1
         type: text
     omschrijving:
         label: Omschrijving
-        span: auto
+        span: left
+        required: 1
         type: text
     klant:
         label: Klant
-        span: auto
         nameFrom: klant
         descriptionFrom: description
         select: naam
+        span: left
+        required: 1
         type: relation
 tabs:
     fields:

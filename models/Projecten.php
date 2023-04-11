@@ -22,7 +22,8 @@ class Projecten extends Model
     ];
 
     public $hasMany = [
-        'uren' => \NielsVanDenDries\Janus\Models\Uren::class
+        'uren' => \NielsVanDenDries\Janus\Models\Uren::class,
+        'betaling' => \NielsVanDenDries\Janus\Models\Betalingen::class
     ];
 
     public $hasOne = [
