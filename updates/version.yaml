@@ -30,3 +30,5 @@
 1.0.11:
     - 'Created table nielsvandendries_janus_inkomsten'
     - builder_table_create_nielsvandendries_janus_inkomsten.php
+1.0.12:
+    - 'Added language files EN and NL'
