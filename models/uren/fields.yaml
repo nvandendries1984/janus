@@ -20,6 +20,8 @@ fields:
     pauze:
         label: 'Pauze (Minuten)'
         span: left
+        default: '0'
+        required: 1
         type: number
     project:
         label: Project
