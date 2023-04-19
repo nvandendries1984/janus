@@ -15,7 +15,6 @@ class BuilderTableCreateNielsvandendriesJanusBetalingen extends Migration
             $table->timestamp('updated_at')->nullable();
             $table->string('btw_tarief')->nullable();
             $table->text('omschrijving')->nullable();
-            $table->string('projecten_id')->nullable();
             $table->string('leverancier_id')->nullable();
             $table->string('categorie_id')->nullable();
             $table->string('project_id')->nullable();
