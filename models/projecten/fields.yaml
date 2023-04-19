@@ -28,3 +28,11 @@ tabs:
             readOnly: 1
             type: relation
             tab: Uren
+        betaling:
+            label: Facturen
+            span: full
+            nameFrom: factuurnummer
+            descriptionFrom: description
+            select: factuurnummer
+            type: relation
+            tab: Facturen

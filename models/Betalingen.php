@@ -27,8 +27,6 @@ class Betalingen extends Model
         'project' => \NielsVanDenDries\Janus\Models\Projecten::class
     ];
 
-    
-
     public $attachMany = [
         'factuur' => \System\Models\File::class
     ];
