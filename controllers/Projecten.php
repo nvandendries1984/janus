@@ -21,4 +21,11 @@ class Projecten extends Controller
         BackendMenu::setContext('NielsVanDenDries.Janus', 'main-menu-item', 'side-menu-item7');
     }
 
+    public function show($id)
+    {
+        $project = Projecten::find($id);
+        $betalingen = $project->getBetalingenForProject();
+        return view('project.show', compact('project', 'betalingen'));
+    }
+
 }

@@ -21,7 +21,7 @@ class Projecten extends Model
     public $rules = [
     ];
 
-    public $hasMany = [
+    public $belongsTo = [
         'uren' => \NielsVanDenDries\Janus\Models\Uren::class,
         'betaling' => \NielsVanDenDries\Janus\Models\Betalingen::class
     ];
@@ -29,4 +29,23 @@ class Projecten extends Model
     public $hasOne = [
         'klant' => \NielsVanDenDries\Janus\Models\Klanten::class
     ];
+
+    // public function getBetalingenForProjectOptions()
+    // {
+    //     $betalingen = Betalingen::where('project_id', $this->id)->get();
+    // 
+    //     $options = [];
+    // 
+    //     foreach ($betalingen as $betaling) {
+    //         $options[$betaling->id] = $betaling->factuurnummer . ' - ' . $betaling->bedrag;
+    //     }
+    // 
+    //     return $options;
+    // }
+
+    public function getBetalingenForProjectOptions()
+    {
+        return Betalingen::where('project_id', $this->id)->get();
+    }
+
 }
