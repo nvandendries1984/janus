@@ -1,6 +1,7 @@
 <?php namespace NielsVanDenDries\Janus\Controllers;
 
 use Backend\Classes\Controller;
+
 use BackendMenu;
 
 class Projecten extends Controller
@@ -19,4 +20,5 @@ class Projecten extends Controller
         parent::__construct();
         BackendMenu::setContext('NielsVanDenDries.Janus', 'main-menu-item', 'side-menu-item7');
     }
+
 }

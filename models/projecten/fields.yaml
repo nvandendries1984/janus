@@ -17,22 +17,3 @@ fields:
         span: left
         required: 1
         type: relation
-tabs:
-    fields:
-        uren:
-            label: Uren
-            nameFrom: uren
-            descriptionFrom: uren
-            select: bereikte_tijd
-            span: auto
-            readOnly: 1
-            type: relation
-            tab: Uren
-        betaling:
-            label: Facturen
-            span: full
-            nameFrom: factuurnummer
-            descriptionFrom: description
-            select: factuurnummer
-            type: relation
-            tab: Facturen

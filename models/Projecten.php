@@ -29,5 +29,4 @@ class Projecten extends Model
     public $hasOne = [
         'klant' => \NielsVanDenDries\Janus\Models\Klanten::class
     ];
-
 }
