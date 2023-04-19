@@ -17,8 +17,3 @@ fields:
         span: left
         required: 1
         type: relation
-    betaling:
-        label: Factuurnummers
-        type: relation
-        span: left
-        nameFrom: factuurnummer
