@@ -9,7 +9,8 @@
               <th scope="col">#</th>
               <th scope="col">factuurnummer</th>
               <th scope="col">bedrag (&euro;)</th>
-              <th scope="col">omschrijving</th>
+              <th scope="col">factuurdatum</th>
+              <th scope="col">Status</th>
             </tr>
           </thead>
           <tbody>
@@ -18,7 +19,8 @@
                 <th scope="row">{{ betaling.id }}</th>
                 <td>{{ betaling.factuurnummer }}</td>
                 <td>{{ betaling.bedrag }}</td>
-                <td>{{ betaling.omschrijving|raw }}</td>
+                <td>{{ betaling.factuurdatum }}</td>
+                <td>{{ betaling.status }}</td>
             </tr>
             {% endfor %}
           </tbody>
@@ -34,6 +36,7 @@
               <th scope="col">factuurnummer</th>
               <th scope="col">bedrag (&euro;)</th>
               <th scope="col">omschrijving</th>
+              <th scope="col">Status</th>
             </tr>
           </thead>
           <tbody>
@@ -43,9 +46,11 @@
                 <td>{{ inkomst.factuurnummer }}</td>
                 <td>{{ inkomst.bedrag }}</td>
                 <td>{{ inkomst.omschrijving|raw }}</td>
+                <td>{{ inkomst.status }}</td>
             </tr>
             {% endfor %}
           </tbody>
     </table>
 </div>
-<p><i>Alle bedrijgen zijn inclusief BTW</i></p>
+<p><i>*Alle bedrijgen zijn inclusief BTW</i></p>
+{# {{ dump() }} #}
