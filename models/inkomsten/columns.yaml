@@ -63,3 +63,8 @@ columns:
         type: datetime
         invisible: true
         sortable: true
+    periode:
+        label: Perioder
+        type: text
+        searchable: true
+        sortable: true

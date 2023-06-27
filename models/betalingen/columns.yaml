@@ -11,25 +11,25 @@ columns:
         type: text
         sortable: true
     bedrag:
-        label: Bedrag inc BTW
+        label: 'Bedrag inc BTW'
         type: number
         sortable: true
     bedrag_btw:
-        label: BTW bedrag
+        label: 'BTW bedrag'
         type: number
-        decimals: 2
+        decimals: '2'
         sortable: true
-        search: false
-        select: CONCAT(FORMAT(bedrag - (bedrag / (1 + (btw_tarief / 100))), 2), ' (', btw_tarief, '% BTW)')
-        readOnly: true
+        search: '0'
+        select: 'CONCAT(FORMAT(bedrag - (bedrag / (1 + (btw_tarief / 100))), 2), '' ('', btw_tarief, ''% BTW)'')'
+        readOnly: '1'
     bedrag_ex_btw:
-        label: Bedrag ex BTW
+        label: 'Bedrag ex BTW'
         type: number
-        decimals: 2
+        decimals: '2'
         sortable: true
-        search: false
-        select: CONCAT(FORMAT(bedrag / (1 + (btw_tarief / 100)), 2), ' (', btw_tarief, '% BTW)')
-        readOnly: true
+        search: '0'
+        select: 'CONCAT(FORMAT(bedrag / (1 + (btw_tarief / 100)), 2), '' ('', btw_tarief, ''% BTW)'')'
+        readOnly: '1'
     status:
         label: status
         type: text
@@ -47,4 +47,8 @@ columns:
         label: 'Gemaakt op'
         type: datetime
         sortable: true
-
+    periode:
+        label: Periode
+        type: text
+        searchable: true
+        sortable: true

@@ -33,4 +33,10 @@
 1.0.12:
     - 'Added language files EN and NL'
 1.0.13:
-    - Minor Bugfix in Betalingen, relatie veranderd
+    - 'Minor Bugfix in Betalingen, relatie veranderd'
+1.0.14:
+    - 'Updated table nielsvandendries_janus_betalingen'
+    - builder_table_update_nielsvandendries_janus_betalingen.php
+1.0.15:
+    - 'Updated table nielsvandendries_janus_inkomsten'
+    - builder_table_update_nielsvandendries_janus_inkomsten.php
