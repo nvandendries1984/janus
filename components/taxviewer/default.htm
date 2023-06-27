@@ -1,60 +1,62 @@
 {% set Betalingen = __SELF__.betaling %}
 {% set Inkomsten = __SELF__.inkomst %}
-
-<div>
-  <h3>Betalingen</h3>
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">factuurnummer</th>
-        <th scope="col">bedrag (&euro;)</th>
-        <th scope="col">factuurdatum</th>
-        <th scope="col">Status</th>
-        <th scope="col">Periode</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for betaling in Betalingen %}
-      <tr>
-        <th scope="row">{{ betaling.id }}</th>
-        <td>{{ betaling.factuurnummer }}</td>
-        <td>{{ betaling.bedrag }}</td>
-        <td>{{ betaling.factuurdatum }}</td>
-        <td>{{ betaling.status }}</td>
-        <td>{{ betaling.periode }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-</div>
-<br>
-<div>
-  <h3>Inkomsten</h3>
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">factuurnummer</th>
-        <th scope="col">bedrag (&euro;)</th>
-        <th scope="col">omschrijving</th>
-        <th scope="col">Status</th>
-        <th scope="col">Periode</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for inkomst in Inkomsten %}
-      <tr>
-        <th scope="row">{{ inkomst.id }}</th>
-        <td>{{ inkomst.factuurnummer }}</td>
-        <td>{{ inkomst.bedrag }}</td>
-        <td>{{ inkomst.omschrijving|raw }}</td>
-        <td>{{ inkomst.status }}</td>
-        <td>{{ inkomst.periode }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-</div>
+<section id="outgoing">
+  <div>
+    <h3>Betalingen</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">factuurnummer</th>
+          <th scope="col">bedrag (&euro;)</th>
+          <th scope="col">factuurdatum</th>
+          <th scope="col">Status</th>
+          <th scope="col">Periode</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for betaling in Betalingen %}
+        <tr>
+          <th scope="row">{{ betaling.id }}</th>
+          <td>{{ betaling.factuurnummer }}</td>
+          <td>{{ betaling.bedrag }}</td>
+          <td>{{ betaling.factuurdatum }}</td>
+          <td>{{ betaling.status }}</td>
+          <td>{{ betaling.periode }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+<section id="incoming">
+  <div>
+    <h3>Inkomsten</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">factuurnummer</th>
+          <th scope="col">bedrag (&euro;)</th>
+          <th scope="col">omschrijving</th>
+          <th scope="col">Status</th>
+          <th scope="col">Periode</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for inkomst in Inkomsten %}
+        <tr>
+          <th scope="row">{{ inkomst.id }}</th>
+          <td>{{ inkomst.factuurnummer }}</td>
+          <td>{{ inkomst.bedrag }}</td>
+          <td>{{ inkomst.omschrijving|raw }}</td>
+          <td>{{ inkomst.status }}</td>
+          <td>{{ inkomst.periode }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
 <p><i>*Alle bedrijgen zijn inclusief BTW</i></p>
 {# {{ dump() }} #}

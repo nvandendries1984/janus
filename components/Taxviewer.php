@@ -18,12 +18,25 @@ class Taxviewer extends ComponentBase
 
     public function defineProperties()
     {
-        return [];
+        return [
+            'periode' => [
+                'title'             => 'Periode',
+                'description'       => 'Watch the Simpson',
+                'type'              => 'dropdown',
+            ]
+        ];
+    }
+
+    // Functie de de gegevens ophaalt uit de database
+    public function getPeriodeOptions()
+    {
+        return Betalingen::get()->lists('periode', 'periode');
+        return Inkomsten::get()->lists('periode', 'periode');
     }
 
     public function onRun()
     {
-        $this->betaling = Betalingen::get()->toArray();
-        $this->inkomst = Inkomsten::get()->toArray();
+        $this->betaling = Betalingen::where('periode', $this->property('periode'))->get()->toArray();
+        $this->inkomst = Inkomsten::where('periode', $this->property('periode'))->get()->toArray();
     }
 }
