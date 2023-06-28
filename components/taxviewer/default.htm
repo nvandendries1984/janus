@@ -42,9 +42,8 @@
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">#</th>
+          <th scope="col">Factuurnummer</th>
           <th scope="col">Opdrachtgever</th>
-          <th scope="col">factuurnummer</th>
           <th scope="col">bedrag (&euro;)</th>
           <th scope="col">BTW-bedrag (&euro;)</th>
           <th scope="col">omschrijving</th>
@@ -55,9 +54,8 @@
       <tbody>
         {% for inkomst in Inkomsten %}
         <tr>
-          <th scope="row">{{ inkomst.id }}</th>
+          <th scope="row">{{ inkomst.factuurnummer }}</th>
           <td>{{ inkomst.klant.naam }}</td>
-          <td>{{ inkomst.factuurnummer }}</td>
           <td>{{ inkomst.bedrag }}</td>
           <td>{{ (inkomst.bedrag * 0.21)|round(2) }}</td>
           <td>{{ inkomst.omschrijving|raw }}</td>
