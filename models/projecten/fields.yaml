@@ -17,10 +17,3 @@ fields:
         span: left
         required: 1
         type: relation
-    betaling:
-        label: betaling
-        span: auto
-        nameFrom: betaling
-        descriptionFrom: betaling
-        select: factuurnummer
-        type: relation

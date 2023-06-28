@@ -9,6 +9,7 @@
         <tr>
           <th scope="col">#</th>
           <th scope="col">Leverancier</th>
+          <th scope="col">Project</th>
           <th scope="col">factuurnummer</th>
           <th scope="col">bedrag (&euro;)</th>
           <th scope="col">BTW-bedrag (&euro;)</th>
@@ -22,6 +23,7 @@
         <tr>
           <th scope="row">{{ betaling.id }}</th>
           <td>{{ betaling.leverancier.naam }}</td>
+          <td>{{ betaling.project.naam }}</td>
           <td>{{ betaling.factuurnummer }}</td>
           <td>{{ betaling.bedrag }}</td>
           <td>{{ (betaling.bedrag * 0.21)|round(2) }}</td>

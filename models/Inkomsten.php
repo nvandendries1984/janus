@@ -22,12 +22,12 @@ class Inkomsten extends Model
     ];
 
     public $hasOne = [
-        'categorie' => \NielsVanDenDries\Janus\Models\Categorien::class,
-        'klant' => \NielsVanDenDries\Janus\Models\Klanten::class
+        'categorie' => \NielsVanDenDries\Janus\Models\Categorien::class
     ];
 
     public $belongsTo = [
-        'leverancier' => \NielsVanDenDries\Janus\Models\Leveranciers::class
+        'leverancier' => \NielsVanDenDries\Janus\Models\Leveranciers::class,
+        'klant' => \NielsVanDenDries\Janus\Models\Klanten::class
     ];
 
     public $attachMany = [

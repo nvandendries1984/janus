@@ -65,7 +65,7 @@ navigation:
                 permissions:
                     - manager
             side-menu-item10:
-                label: Categorien
+                label: Categoriën
                 url: nielsvandendries/janus/categorien
                 icon: icon-folder
                 permissions:
