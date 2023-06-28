@@ -1,6 +1,5 @@
 {% set Betalingen = __SELF__.betaling %}
 {% set Inkomsten = __SELF__.inkomst %}
-{% set Leveranciers = __SELF__.leverancier %}
 
 <section id="outgoing">
   <div>
@@ -9,6 +8,7 @@
       <thead>
         <tr>
           <th scope="col">#</th>
+          <th scope="col">Leverancier</th>
           <th scope="col">factuurnummer</th>
           <th scope="col">bedrag (&euro;)</th>
           <th scope="col">BTW-bedrag (&euro;)</th>
@@ -21,6 +21,7 @@
         {% for betaling in Betalingen %}
         <tr>
           <th scope="row">{{ betaling.id }}</th>
+          <td>{{ betaling.leverancier.naam }}</td>
           <td>{{ betaling.factuurnummer }}</td>
           <td>{{ betaling.bedrag }}</td>
           <td>{{ (betaling.bedrag * 0.21)|round(2) }}</td>
@@ -40,6 +41,7 @@
       <thead>
         <tr>
           <th scope="col">#</th>
+          <th scope="col">Opdrachtgever</th>
           <th scope="col">factuurnummer</th>
           <th scope="col">bedrag (&euro;)</th>
           <th scope="col">BTW-bedrag (&euro;)</th>
@@ -52,6 +54,7 @@
         {% for inkomst in Inkomsten %}
         <tr>
           <th scope="row">{{ inkomst.id }}</th>
+          <td>{{ inkomst.klant.naam }}</td>
           <td>{{ inkomst.factuurnummer }}</td>
           <td>{{ inkomst.bedrag }}</td>
           <td>{{ (inkomst.bedrag * 0.21)|round(2) }}</td>

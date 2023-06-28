@@ -26,6 +26,10 @@ class Inkomsten extends Model
         'klant' => \NielsVanDenDries\Janus\Models\Klanten::class
     ];
 
+    public $belongsTo = [
+        'leverancier' => \NielsVanDenDries\Janus\Models\Leveranciers::class
+    ];
+
     public $attachMany = [
         'factuur' => \System\Models\File::class
     ];

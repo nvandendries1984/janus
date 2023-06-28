@@ -10,6 +10,7 @@ class Taxviewer extends ComponentBase
     public $betaling;
     public $inkomst;
     public $leverancier;
+    public $klant;
     public function componentDetails()
     {
         return [
@@ -38,8 +39,7 @@ class Taxviewer extends ComponentBase
 
     public function onRun()
     {
-        $this->betaling = Betalingen::where('periode', $this->property('periode'))->get()->toArray();
-        $this->inkomst = Inkomsten::where('periode', $this->property('periode'))->get()->toArray();
-        $this->leverancier = Leveranciers::get()->toArray();
+        $this->betaling = Betalingen::with('leverancier')->where('periode', $this->property('periode'))->get()->toArray();
+        $this->inkomst = Inkomsten::with('klant')->where('periode', $this->property('periode'))->get()->toArray();
     }
 }
