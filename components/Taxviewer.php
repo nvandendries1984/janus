@@ -3,11 +3,13 @@
 use Cms\Classes\ComponentBase;
 use NielsVanDenDries\Janus\Models\Betalingen;
 use NielsVanDenDries\Janus\Models\Inkomsten;
+use NielsVanDenDries\Janus\Models\Leveranciers;
 
 class Taxviewer extends ComponentBase
 {
     public $betaling;
     public $inkomst;
+    public $leverancier;
     public function componentDetails()
     {
         return [
@@ -38,5 +40,6 @@ class Taxviewer extends ComponentBase
     {
         $this->betaling = Betalingen::where('periode', $this->property('periode'))->get()->toArray();
         $this->inkomst = Inkomsten::where('periode', $this->property('periode'))->get()->toArray();
+        $this->leverancier = Leveranciers::get()->toArray();
     }
 }
