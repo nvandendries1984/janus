@@ -9,6 +9,7 @@
           <th scope="col">#</th>
           <th scope="col">factuurnummer</th>
           <th scope="col">bedrag (&euro;)</th>
+          <th scope="col">BTW-bedrag (&euro;)</th>
           <th scope="col">factuurdatum</th>
           <th scope="col">Status</th>
           <th scope="col">Periode</th>
@@ -20,6 +21,7 @@
           <th scope="row">{{ betaling.id }}</th>
           <td>{{ betaling.factuurnummer }}</td>
           <td>{{ betaling.bedrag }}</td>
+          <td>{{ (betaling.bedrag * 0.21)|round(2) }}</td> <!-- Bereken en rond het BTW-bedrag -->
           <td>{{ betaling.factuurdatum }}</td>
           <td>{{ betaling.status }}</td>
           <td>{{ betaling.periode }}</td>
@@ -38,6 +40,7 @@
           <th scope="col">#</th>
           <th scope="col">factuurnummer</th>
           <th scope="col">bedrag (&euro;)</th>
+          <th scope="col">BTW-bedrag (&euro;)</th> <!-- Nieuwe kolom voor BTW-bedrag -->
           <th scope="col">omschrijving</th>
           <th scope="col">Status</th>
           <th scope="col">Periode</th>
@@ -49,6 +52,7 @@
           <th scope="row">{{ inkomst.id }}</th>
           <td>{{ inkomst.factuurnummer }}</td>
           <td>{{ inkomst.bedrag }}</td>
+          <td>{{ (inkomst.bedrag * 0.21)|round(2) }}</td> <!-- Bereken en rond het BTW-bedrag -->
           <td>{{ inkomst.omschrijving|raw }}</td>
           <td>{{ inkomst.status }}</td>
           <td>{{ inkomst.periode }}</td>
@@ -59,4 +63,3 @@
   </div>
 </section>
 <p><i>*Alle bedrijgen zijn inclusief BTW</i></p>
-{# {{ dump() }} #}
