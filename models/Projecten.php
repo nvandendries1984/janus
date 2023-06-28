@@ -22,11 +22,14 @@ class Projecten extends Model
     ];
 
     public $belongsTo = [
-        'uren' => \NielsVanDenDries\Janus\Models\Uren::class,
-        'betaling' => \NielsVanDenDries\Janus\Models\Betalingen::class
+        'uren' => \NielsVanDenDries\Janus\Models\Uren::class
     ];
 
     public $hasOne = [
         'klant' => \NielsVanDenDries\Janus\Models\Klanten::class
+    ];
+
+    public $hasMany = [
+        'betaling' => \NielsVanDenDries\Janus\Models\Betalingen::class
     ];
 }

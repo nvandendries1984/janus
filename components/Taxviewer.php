@@ -14,7 +14,7 @@ class Taxviewer extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name' => 'Taxviewer Component',
+            'name' => 'Finance viewer',
             'description' => 'No description provided yet...'
         ];
     }

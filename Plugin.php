@@ -7,7 +7,8 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            \NielsVanDenDries\Janus\Components\Taxviewer::class => 'Taxviewer'
+            \NielsVanDenDries\Janus\Components\Taxviewer::class => 'Taxviewer',
+            \NielsVanDenDries\Janus\Components\Projectviewer::class => 'Projectviewer'
         ];
     }
 

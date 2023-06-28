@@ -1,0 +1,18 @@
+{% set Projecten = __SELF__.project %}
+{% for project in Projecten %}
+<div class="card mb-3"">
+    <div class=" row g-0">
+    <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title">{{ project.naam }}</h5>
+            <p class="card-text">{{ project.omschrijving|raw }}</p>
+            <p class="card-text"><small class="text-body-secondary">
+                    {% if project.klant.naam %}
+                    {{ project.klant.naam }}
+                    {% endif %}
+                </small></p>
+        </div>
+    </div>
+</div>
+</div>
+{% endfor %}
