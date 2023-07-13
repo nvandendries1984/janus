@@ -1,0 +1,11 @@
+name: Belasting
+modelClass: NielsVanDenDries\Janus\Models\Belasting
+form: $/nielsvandendries/janus/models/belasting/fields.yaml
+defaultRedirect: nielsvandendries/janus/belasting
+create:
+    redirect: 'nielsvandendries/janus/belasting/update/:id'
+    redirectClose: nielsvandendries/janus/belasting
+update:
+    redirect: nielsvandendries/janus/belasting
+    redirectClose: nielsvandendries/janus/belasting
+preview: {  }

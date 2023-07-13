@@ -1,0 +1,8 @@
+{% set Belasting = __SELF__.periode %}
+
+<ul class="list-group">
+    {% for periode in Belasting %}
+    <li class="list-group-item"><strong>Periode</strong> {{ periode.periode}} {{ periode.jaar}} = {{ periode.afgerond}}</li>
+    {% endfor %}
+</ul>
+

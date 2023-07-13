@@ -22,10 +22,7 @@ class Projecten extends Model
     ];
 
     public $belongsTo = [
-        'uren' => \NielsVanDenDries\Janus\Models\Uren::class
-    ];
-
-    public $hasOne = [
+        'uren' => \NielsVanDenDries\Janus\Models\Uren::class,
         'klant' => \NielsVanDenDries\Janus\Models\Klanten::class
     ];
 

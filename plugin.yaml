@@ -76,3 +76,9 @@ navigation:
                 icon: icon-gears
                 permissions:
                     - manager
+            side-menu-item2:
+                label: 'BTW periodes'
+                url: nielsvandendries/janus/belasting
+                icon: icon-euro
+                permissions:
+                    - manager

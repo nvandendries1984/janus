@@ -1,0 +1,13 @@
+fields:
+    periode:
+        label: Periode
+        span: auto
+        type: text
+    jaar:
+        label: Jaar
+        span: auto
+        type: text
+    afgerond:
+        label: Afgerond
+        span: auto
+        type: switch

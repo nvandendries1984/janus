@@ -1,0 +1,10 @@
+columns:
+    periode:
+        label: periode
+        type: text
+    jaar:
+        label: jaar
+        type: text
+    afgerond:
+        label: afgerond
+        type: switch

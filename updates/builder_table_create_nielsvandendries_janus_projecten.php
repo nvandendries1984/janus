@@ -15,6 +15,7 @@ class BuilderTableCreateNielsvandendriesJanusProjecten extends Migration
             $table->timestamp('updated_at')->nullable();
             $table->string('uren_id')->nullable();
             $table->string('betalingen_id')->nullable();
+            $table->string('klant_id')->nullable();
             $table->string('naam');
             $table->string('omschrijving');
         });
