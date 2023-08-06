@@ -9,7 +9,8 @@ class Plugin extends PluginBase
         return [
             \NielsVanDenDries\Janus\Components\Taxviewer::class => 'Taxviewer',
             \NielsVanDenDries\Janus\Components\Projectviewer::class => 'Projectviewer',
-            \NielsVanDenDries\Janus\Components\Btw::class => 'Btw'
+            \NielsVanDenDries\Janus\Components\Btw::class => 'Btw',
+            \NielsVanDenDries\Janus\Components\Bookings::class => 'Bookings'
         ];
     }
 

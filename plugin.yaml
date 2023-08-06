@@ -82,3 +82,14 @@ navigation:
                 icon: icon-euro
                 permissions:
                     - manager
+    main-menu-item2:
+        label: SpectrumAV
+        url: /
+        icon: icon-automobile
+        sideMenu:
+            side-menu-item:
+                label: Booking
+                url: nielsvandendries/janus/worked
+                icon: icon-book
+                permissions:
+                    - manager

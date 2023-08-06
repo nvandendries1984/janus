@@ -1,0 +1,51 @@
+columns:
+    project:
+        label: project
+        type: text
+        searchable: true
+        sortable: true
+    klant:
+        label: klant
+        type: text
+        searchable: true
+        sortable: true
+    referentie:
+        label: referentie
+        type: text
+        searchable: true
+        sortable: true
+    type:
+        label: type
+        type: text
+        searchable: true
+        sortable: true
+    start:
+        label: start
+        type: text
+        sortable: true
+    end:
+        label: end
+        type: text
+        sortable: true
+    pauze:
+        label: pauze
+        type: text
+        sortable: true
+    kilometers:
+        label: kilometers
+        type: text
+        sortable: true
+    materiaal:
+        label: materiaal
+        type: text
+        invisible: true
+    locatie:
+        label: locatie
+        type: text
+        searchable: true
+        sortable: true
+    gefactureerd:
+        label: gefactureerd
+        type: text
+        searchable: true
+        sortable: true

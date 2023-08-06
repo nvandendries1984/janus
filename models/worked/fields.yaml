@@ -1,0 +1,61 @@
+fields:
+    project:
+        label: Project
+        span: auto
+        type: text
+    klant:
+        label: Klant
+        span: auto
+        type: text
+    referentie:
+        label: Referentie
+        span: auto
+        type: text
+    type:
+        label: Type
+        span: auto
+        options:
+            Opbouw: Opbouw
+            Afbouw: Afbouw
+            Transport: Transport
+            Showtime: Showtime
+            Anders: Anders
+        showSearch: true
+        type: dropdown
+    gefactureerd:
+        label: Gefactureerd
+        span: auto
+        type: switch
+tabs:
+    fields:
+        start:
+            label: Start
+            span: auto
+            type: datepicker
+            tab: 'Tab 1'
+        end:
+            label: End
+            span: auto
+            type: datepicker
+            tab: 'Tab 1'
+        pauze:
+            label: Pauze
+            span: auto
+            type: number
+            tab: 'Tab 1'
+        kilometers:
+            label: Kilometers
+            span: auto
+            type: number
+            tab: 'Tab 1'
+        materiaal:
+            label: Materiaal
+            size: small
+            span: auto
+            type: richeditor
+            tab: 'Tab 1'
+        locatie:
+            label: Locatie
+            span: auto
+            type: text
+            tab: 'Tab 1'

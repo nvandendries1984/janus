@@ -1,0 +1,25 @@
+{% set Worked = __SELF__.worked %}
+{% for worked in Worked %}
+<div class="card text-bg-dark mb-3">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><strong><i class="bi bi-wrench-adjustable-circle"></i> {{ worked.project }} - {{ worked.referentie }} ({{ worked.klant }})</strong></h5>
+            <p class="card-text">
+              <strong>Start:</strong> {{ worked.start }}<br>
+              <strong>End:</strong> {{ worked.end }}<br>
+              {% if worked.type %}<strong>Type:</strong> {{ worked.type }}<br>{% endif %}
+              {% if worked.locatie %}<strong>Locatie:</strong> {{ worked.locatie }}<br>{% endif %}
+              {% if worked.pauze %}<strong>Pauze:</strong> {{ worked.pauze }}<br>{% endif %}
+              {% if worked.kilometers %}<strong>Kilometers:</strong> {{ worked.kilometers }}<br>{% endif %}
+              {% if worked.materiaal %}<strong>Materiaal:</strong> 
+                {{ worked.materiaal|raw }}
+              {% endif %}
+            </p>
+            <p class="card-text"></p>
+          <p class="card-text"><small class="text-body-light"><i>Last updated: {{ worked.updated_at }}</i></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}

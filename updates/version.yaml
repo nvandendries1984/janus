@@ -37,3 +37,6 @@ v1.0.13:
 v1.0.14:
     - 'Created table nielsvandendries_janus_belasting'
     - builder_table_create_nielsvandendries_janus_belasting.php
+v1.0.15:
+    - 'Created table nielsvandendries_janus_worked'
+    - builder_table_create_nielsvandendries_janus_worked.php

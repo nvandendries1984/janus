@@ -1,0 +1,11 @@
+name: Worked
+modelClass: NielsVanDenDries\Janus\Models\Worked
+form: $/nielsvandendries/janus/models/worked/fields.yaml
+defaultRedirect: nielsvandendries/janus/worked
+create:
+    redirect: 'nielsvandendries/janus/worked/update/:id'
+    redirectClose: nielsvandendries/janus/worked
+update:
+    redirect: nielsvandendries/janus/worked
+    redirectClose: nielsvandendries/janus/worked
+preview: {  }
