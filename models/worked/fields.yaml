@@ -40,7 +40,7 @@ tabs:
                 mode: crop
                 extension: auto
             type: fileupload
-            tab: Details
+            tab: Files
 fields:
     project:
         label: Project
