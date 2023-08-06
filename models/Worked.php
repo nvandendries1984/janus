@@ -26,7 +26,7 @@ class Worked extends Model
     public $rules = [
     ];
 
-    public $attachOne = [
+    public $attachMany = [
         'factuur' => \System\Models\File::class
     ];
 }
