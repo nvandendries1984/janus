@@ -1,3 +1,46 @@
+tabs:
+    fields:
+        start:
+            label: Start
+            span: auto
+            type: datepicker
+            tab: Details
+        end:
+            label: End
+            span: auto
+            type: datepicker
+            tab: Details
+        pauze:
+            label: Pauze
+            span: auto
+            type: number
+            tab: Details
+        kilometers:
+            label: Kilometers
+            span: auto
+            type: number
+            tab: Details
+        materiaal:
+            label: Materiaal
+            size: small
+            span: auto
+            type: richeditor
+            tab: Details
+        locatie:
+            label: Locatie
+            span: auto
+            type: text
+            tab: Details
+        factuur:
+            label: Factuur
+            span: auto
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            type: fileupload
+            tab: Details
 fields:
     project:
         label: Project
@@ -26,36 +69,3 @@ fields:
         label: Gefactureerd
         span: auto
         type: switch
-tabs:
-    fields:
-        start:
-            label: Start
-            span: auto
-            type: datepicker
-            tab: 'Tab 1'
-        end:
-            label: End
-            span: auto
-            type: datepicker
-            tab: 'Tab 1'
-        pauze:
-            label: Pauze
-            span: auto
-            type: number
-            tab: 'Tab 1'
-        kilometers:
-            label: Kilometers
-            span: auto
-            type: number
-            tab: 'Tab 1'
-        materiaal:
-            label: Materiaal
-            size: small
-            span: auto
-            type: richeditor
-            tab: 'Tab 1'
-        locatie:
-            label: Locatie
-            span: auto
-            type: text
-            tab: 'Tab 1'
