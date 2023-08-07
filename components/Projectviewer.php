@@ -21,6 +21,8 @@ class Projectviewer extends ComponentBase
 
     public function onRun()
     {
-        $this->project = Projecten::with('betaling', 'uren', 'klant')->get()->toArray();
+        $this->project = Projecten::with('betaling', 'uren', 'klant')
+            ->get()
+            ->toArray();
     }
 }

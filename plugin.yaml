@@ -13,6 +13,7 @@ navigation:
         label: Janus
         url: /
         icon: icon-money
+        iconSvg: 'https://nvandendries.nl/storage/app/media/uploaded-files/money-svgrepo-com.svg'
         permissions:
             - manager
         sideMenu:
@@ -86,6 +87,7 @@ navigation:
         label: SpectrumAV
         url: /
         icon: icon-automobile
+        iconSvg: 'https://nvandendries.nl/storage/app/media/uploaded-files/flexed-biceps-light-skin-tone-svgrepo-com.svg'
         sideMenu:
             side-menu-item:
                 label: Booking

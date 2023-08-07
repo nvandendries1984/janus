@@ -21,6 +21,6 @@ class Bookings extends ComponentBase
 
     public function onRun()
     {
-        $this->worked = Worked::get()->toArray();
+        $this->worked = Worked::orderBy('start', 'asc')->get()->toArray();
     }
 }
