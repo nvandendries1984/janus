@@ -2,10 +2,12 @@
 
 use Cms\Classes\ComponentBase;
 use NielsVanDenDries\Janus\Models\Worked;
+use Carbon\Carbon;
 
 class Bookings extends ComponentBase
 {
     public $worked;
+    public $done;
     public function componentDetails()
     {
         return [
@@ -22,5 +24,6 @@ class Bookings extends ComponentBase
     public function onRun()
     {
         $this->worked = Worked::orderBy('start', 'asc')->get()->toArray();
+        $this->done = Worked::get()->toArray();
     }
 }

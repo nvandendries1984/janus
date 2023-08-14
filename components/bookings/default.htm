@@ -1,5 +1,7 @@
+<h1>Subscribed</h1>
 {% set Worked = __SELF__.worked %}
 {% for worked in Worked %}
+{% if worked.gefactureerd == false %}
 <div class="card text-bg-dark mb-3">
     <div class="row g-0">
       <div class="col-md-8">
@@ -11,15 +13,30 @@
               {% if worked.type %}<strong>Type:</strong> {{ worked.type }}<br>{% endif %}
               {% if worked.locatie %}<strong>Locatie:</strong> {{ worked.locatie }}<br>{% endif %}
               {% if worked.pauze %}<strong>Pauze:</strong> {{ worked.pauze }}<br>{% endif %}
+              {% if worked.gefactureerd %}<strong>Gefactureerd:</strong> {{ worked.gefactureerd }}<br>{% endif %}
               {% if worked.kilometers %}<strong>Kilometers:</strong> {{ worked.kilometers }}<br>{% endif %}
               {% if worked.materiaal %}<strong>Materiaal:</strong> 
                 {{ worked.materiaal|raw }}
               {% endif %}
             </p>
             <p class="card-text"></p>
-          <p class="card-text"><small class="text-body-light"><i>Last updated: {{ worked.updated_at }}</i></small></p>
+          <p class="card-text"><small class="text-body-light"><i>Afgerond op: {{ carbon(worked.updated_at) }}</i></small></p>
         </div>
       </div>
     </div>
   </div>
+  {% endif %}
+{% endfor %}
+
+<h1>Afgerond</h1>
+{% set Worked = __SELF__.done %}
+{% for done in Worked %}
+  {% if done.gefactureerd == true %}
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title"><strong><i class="bi bi-check-circle"></i> {{ done.project }} - {{ done.referentie }} ({{ done.klant }})</strong></h5>
+        <p class="card-text"><small class="text-body-light"><i>Afgerond op: {{ carbon(done.updated_at) }}</i></small></p>
+      </div>
+    </div>
+  {% endif %}
 {% endfor %}
