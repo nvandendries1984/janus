@@ -10,7 +10,7 @@ class Bookings extends ComponentBase
     {
         return [
             'name' => 'Bookings',
-            'description' => 'Booked Worked'
+            'description' => 'Display booked and invoiced items'
         ];
     }
 
