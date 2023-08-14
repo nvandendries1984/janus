@@ -6,7 +6,7 @@
     <div class="row g-0">
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title"><strong><i class="bi bi-wrench-adjustable-circle"></i> {{ worked.project }} - {{ worked.referentie }} ({{ worked.klant }})</strong></h5>
+          <h5 class="card-title"><strong><i class="bi bi-arrow-right-circle"></i> {{ worked.project }} - {{ worked.referentie }} ({{ worked.klant }})</strong></h5>
             <p class="card-text">
               <strong>Start:</strong> {{ worked.start }}<br>
               <strong>End:</strong> {{ worked.end }}<br>
@@ -28,7 +28,6 @@
   {% endif %}
 {% endfor %}
 
-<h1>Afgerond</h1>
 {% set Worked = __SELF__.done %}
 {% for done in Worked %}
   {% if done.gefactureerd == true %}
