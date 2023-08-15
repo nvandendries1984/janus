@@ -44,10 +44,10 @@
       <thead style="background-color: var(--bs-table-active-bg);">
         <tr>
           <th scope="col">Factuurnummer</th>
+          <th scope="col">Opdracht</th>
           <th scope="col">Opdrachtgever</th>
           <th scope="col">bedrag (&euro;)</th>
           <th scope="col">BTW-bedrag (&euro;)</th>
-          <th scope="col">omschrijving</th>
           <th scope="col">Status</th>
           <th scope="col">Periode</th>
         </tr>
@@ -56,10 +56,10 @@
         {% for inkomst in Inkomsten %}
         <tr>
           <th scope="row">{{ inkomst.factuurnummer }}</th>
+          <td>{{ inkomst.naam }}</td>
           <td>{{ inkomst.klant.naam }}</td>
           <td>{{ inkomst.bedrag }}</td>
           <td>{{ (inkomst.bedrag * 0.21)|round(2) }}</td>
-          <td>{{ inkomst.omschrijving|raw }}</td>
           <td>{{ inkomst.status }}</td>
           <td>{{ inkomst.periode }}</td>
         </tr>
@@ -68,4 +68,3 @@
     </table>
   </div>
 </section>
-<p><i>*Alle bedrijgen zijn inclusief BTW</i></p>
